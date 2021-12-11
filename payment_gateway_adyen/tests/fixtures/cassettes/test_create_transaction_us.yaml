@@ -1,0 +1,62 @@
+interactions:
+- request:
+    body: !!python/unicode '{"additionalData": {"executeThreeD": true, "card.encrypted.json":
+      "adyenan0_1_1$afKbqc1vCuw+WpplAvrsnGTw3tWzTtmecSF/QVaEmwmQRdL8tz0j5MxwPPdX9qv4jOO1smTspKp+eKBURylPYXM/mOlMt7lDUzhfzSjr8+crJfbNE1+eAvdxJKuYhMhnOx3g2UuDUrNdzYGz/INrgD+29NZ1i7Eh6AI4xM9vxWQozJlgVvMhnGm2s8wii3Ihl0bXdIC0sYY/sbJm80vyjmTDGVVDYljPvw1B/dCVi2TiLU/s1uJvAfuDeB+DNlOJC3cI6FMN8kdlaqRrCSfJ667KGtoMwAQd9iUSkc4bbd+2lHIN149H+HWcUblGwzw9Vs+baB9k89RTr/hH8OI+wA==$s8aAFciJ4ZgM+swO42TrEEoE912ZRKbbEtnkYFEeS4zLYYBSBcfGt3oSK/zuE3rrFnkfzecYMZqtKyo6Wfn6ysrOq2/IDKkiG1tvIor+pE/yhZGRcLz4RbfF5WSaUFDYJqC7TM19a7lV7oaJeSgKcPYkjPSdZIQAfynCVAB/HKy1qNbrLii4PuiKhiN2JkaHpXe1tYdcm632zsSwwr3m6uxQxNXBm4P+4ZkfrZhZxw=="},
+      "amount": {"currency": "USD", "value": 294750}, "shopperEmail": "deltapc@yourcompany.example.com",
+      "reference": "SO002|deltapc@yourcompany.example.com|45", "browserInfo": {"userAgent":
+      "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9) Gecko/2008052912 Firefox/3.0",
+      "acceptHeader": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+      "shopperReference": 10, "deliveryAddress": {"city": "Fremont", "houseNumberOrName":
+      "", "country": "US", "street": "3661 Station Street", "postalCode": "94538",
+      "stateOrProvince": "California"}, "shopperIP": "42.42.42.42", "merchantAccount":
+      "AkretionCOM340", "applicationInfo": {"adyenLibrary": {"version": "2.0.0", "name":
+      "adyen-python-api-library"}}}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['1368']
+      Content-Type: [application/json]
+      User-Agent: [!!python/unicode 'shopinvader adyen-python-api-library/2.0.0']
+    method: POST
+    uri: https://pal-test.adyen.com/pal/servlet/Payment/v40/authorise
+  response:
+    body: {string: !!python/unicode '{"pspReference":"8835529105196870","resultCode":"Authorised","authCode":"76396"}'}
+    headers:
+      connection: [Keep-Alive]
+      content-type: [application/json;charset=utf-8]
+      date: ['Mon, 18 Mar 2019 12:01:59 GMT']
+      keep-alive: ['timeout=15, max=100']
+      pspreference: ['8835529105196870']
+      server: [Apache]
+      set-cookie: [JSESSIONID=24C625BB12AC8B2C7E393B80C102CCE3.test104e; Path=/pal;
+          Secure; HttpOnly]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"merchantAccount": "AkretionCOM340", "modificationAmount":
+      {"currency": "USD", "value": 294750}, "originalReference": "8835529105196870",
+      "applicationInfo": {"adyenLibrary": {"version": "2.0.0", "name": "adyen-python-api-library"}}}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['233']
+      Content-Type: [application/json]
+      User-Agent: [!!python/unicode 'shopinvader adyen-python-api-library/2.0.0']
+    method: POST
+    uri: https://pal-test.adyen.com/pal/servlet/Payment/v40/capture
+  response:
+    body: {string: !!python/unicode '{"pspReference":"8835529105202306","response":"[capture-received]"}'}
+    headers:
+      connection: [Keep-Alive]
+      content-type: [application/json;charset=utf-8]
+      date: ['Mon, 18 Mar 2019 12:02:00 GMT']
+      keep-alive: ['timeout=15, max=100']
+      pspreference: ['8835529105202306']
+      server: [Apache]
+      set-cookie: [JSESSIONID=2D1C3F8780F349C5ED003257089EC0B8.test103e; Path=/pal;
+          Secure; HttpOnly]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+version: 1

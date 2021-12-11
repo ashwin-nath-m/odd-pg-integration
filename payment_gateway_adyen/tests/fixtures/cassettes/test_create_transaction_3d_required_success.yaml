@@ -1,0 +1,440 @@
+interactions:
+- request:
+    body: !!python/unicode '{"additionalData": {"executeThreeD": true, "card.encrypted.json":
+      "adyenan0_1_1$fgP5yuX7QUA123uv92MNprGcrNAzrPml3OcnkzQ/NyOxscdEJLocE3PskxSQ3+nJ46H+v8nevdHmjG3zVA/FMcqik5xKjQEn8vI8H+E97PIiLfRKOrCmpkm0bKlKTeLeLI+Y6xxskGaqn9XEmbcoss7tp/5yhIpQd9v9G+du65udGT0+dkL8IJhUltIVZ2mt3CfobLXXB9FR38RnUCwSXYb4MbRO+NaKZfncdbcgb7w9lILDUDJ01cDVPLKj22R5ShaE6KRkjrFZr6j4f101t0VMR48AFRjlM6ZdGvNWgkyc/8OA7Apctd08H51WMW089jt6OHjNWspHOc91kM47Ag==$vk0xDR/hkdzDT2wgfZjMc2yUnzRroCj+Zm8VCbslUDYP9Wfc9yP2BhWyrc69UQ+wyc0+Lz1v0Uri4o3tTv8Mm0tpiXWOQRwPX43bgnJTMjBXEBydClpOBJ+TmRbymSfxt2RfWVQ8dEnGpagyIUoSK5l4iiWlW3JvKTtYyWqYMHcxUl9ArKOVlOxgD9G//PYdvgE2tDG4B4xd6gZ2YB4E/ss+mjz7FxPYyAR9NC7pnA=="},
+      "amount": {"currency": "USD", "value": 294750}, "shopperEmail": "deltapc@yourcompany.example.com",
+      "reference": "SO002|deltapc@yourcompany.example.com|40", "browserInfo": {"userAgent":
+      "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9) Gecko/2008052912 Firefox/3.0",
+      "acceptHeader": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+      "shopperReference": 10, "deliveryAddress": {"city": "Fremont", "houseNumberOrName":
+      "", "country": "US", "street": "3661 Station Street", "postalCode": "94538",
+      "stateOrProvince": "California"}, "shopperIP": "42.42.42.42", "merchantAccount":
+      "AkretionCOM340", "applicationInfo": {"adyenLibrary": {"version": "2.0.0", "name":
+      "adyen-python-api-library"}}}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['1368']
+      Content-Type: [application/json]
+      User-Agent: [!!python/unicode 'shopinvader adyen-python-api-library/2.0.0']
+    method: POST
+    uri: https://pal-test.adyen.com/pal/servlet/Payment/v40/authorise
+  response:
+    body: {string: !!python/unicode '{"pspReference":"8535529104671025","resultCode":"RedirectShopper","issuerUrl":"https:\/\/test.adyen.com\/hpp\/3d\/validate.shtml","md":"djIhQStGbVBPRU5lMXpqbGZWUW9OSDgwZz09ITkaapbz8RHByFZrd9smRXg2ZVHdtLj+MtuM0diV7y7C19PKfwy9CGFWm9J3WTqNVWOmVN8Qij1aKRPv6n67DsjiaZHrd75YCu+8AwGJhulmycT3WE\/nWqnaWTTELJ905RIBtWuKZybdIRjksixQfAp2AIPqiYHcy8WMBnwnWuQ7rmHShf\/8qid\/rhlvPQRNcsXekP8DfEbEJUFTVSqivb8vvODtUYXfvymvBdhRfTMvWG4N2Id+4wFeqpIJnqaYSG9gTUHayLIIN58g\/WDd1MN6WA6YkEinblIJ+O4aRTUgpyP3wJiHnHnhxXjbJjF\/DERpj41oq9ERRqKOgNid","paRequest":"eNpVUl1zgjAQ\/CvWH0A+AEHmzAyVztQH0VZ46FOHwZvKtIAGKNJfXw5R2zzd7uY2l00gOmjEYIdpo1HBGqsq+cBJtl9MPdc2bVvOBbdmjuDSnirY+q94UvCNusrKQgmDGxLYFfbtOj0kRa0gSU+Pq1DZQpoWsBFBjnoVqAirepvnfnpqMo0a2IWGIslRxf67v3zw\/E+Nde+53KxNiwMbNEjLpqh1p6TdU1cAjf5Sh7o+eoy1bWskY6uRljkwEoHdB9s2VFW92Tnbq00Q\/4RR3G2ipzYM3sx15Hfhi09rAYx2wD6pUUku5twU7kRIjwuPO8AGHpKcplDxLpjIueUYNNjIwZGO8i+ARNL+ctBnrrFIO+XSFW8I8HwsC6QuYLca2H305TMlnNZ9arakiO2Z4875NexBIJeMsuKCDzYEgFErG5+Rjc\/dV\/++wS\/j0K18"}'}
+    headers:
+      connection: [Keep-Alive]
+      content-type: [application/json;charset=utf-8]
+      date: ['Mon, 18 Mar 2019 12:01:07 GMT']
+      keep-alive: ['timeout=15, max=100']
+      pspreference: ['8535529104671025']
+      server: [Apache]
+      set-cookie: [JSESSIONID=FA6BF334F1B9323A982633FCD4D754A5.test3e; Path=/pal;
+          Secure; HttpOnly]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode 'MD=djIhQStGbVBPRU5lMXpqbGZWUW9OSDgwZz09ITkaapbz8RHByFZrd9smRXg2ZVHdtLj%2BMtuM0diV7y7C19PKfwy9CGFWm9J3WTqNVWOmVN8Qij1aKRPv6n67DsjiaZHrd75YCu%2B8AwGJhulmycT3WE%2FnWqnaWTTELJ905RIBtWuKZybdIRjksixQfAp2AIPqiYHcy8WMBnwnWuQ7rmHShf%2F8qid%2FrhlvPQRNcsXekP8DfEbEJUFTVSqivb8vvODtUYXfvymvBdhRfTMvWG4N2Id%2B4wFeqpIJnqaYSG9gTUHayLIIN58g%2FWDd1MN6WA6YkEinblIJ%2BO4aRTUgpyP3wJiHnHnhxXjbJjF%2FDERpj41oq9ERRqKOgNid&TermUrl=https%3A%2F%2Ftest.adyen.com%2Fhpp%2F3d%2Fvalidate.shtml&PaReq=eNpVUl1zgjAQ%2FCvWH0A%2BAEHmzAyVztQH0VZ46FOHwZvKtIAGKNJfXw5R2zzd7uY2l00gOmjEYIdpo1HBGqsq%2BcBJtl9MPdc2bVvOBbdmjuDSnirY%2Bq94UvCNusrKQgmDGxLYFfbtOj0kRa0gSU%2BPq1DZQpoWsBFBjnoVqAirepvnfnpqMo0a2IWGIslRxf67v3zw%2FE%2BNde%2B53KxNiwMbNEjLpqh1p6TdU1cAjf5Sh7o%2Beoy1bWskY6uRljkwEoHdB9s2VFW92Tnbq00Q%2F4RR3G2ipzYM3sx15Hfhi09rAYx2wD6pUUku5twU7kRIjwuPO8AGHpKcplDxLpjIueUYNNjIwZGO8i%2BARNL%2BctBnrrFIO%2BXSFW8I8HwsC6QuYLca2H305TMlnNZ9arakiO2Z4875NexBIJeMsuKCDzYEgFErG5%2BRjc%2FdV%2F%2B%2BwS%2Fj0K18'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['955']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: https://test.adyen.com/hpp/3d/validate.shtml
+  response:
+    body: {string: !!python/unicode "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0\
+        \ Strict//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n\
+        <html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\"\n  \t     data-page-model=\"\
+        multi-page\"        \t\t    >\n<head>\n\t<meta http-equiv=\"Content-Type\"\
+        \ content=\"text/html; charset=utf-8\" />\n\n    <meta name=\"viewport\" content=\"\
+        width=device-width, initial-scale=1\" />\n\n\t<title>3D Authentication Host</title>\n\
+        \n\t<link rel=\"shortcut icon\" href=\"/sf/5aC3PdJA/img/favicon.ico\" />\n\
+        \t\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"/hpp/css/reset.css;jsessionid=E0B2EAF02EB210E36CC5455474DB26D0.test103e?v=fbd5\"\
+        \ />\n\t<link rel=\"stylesheet\" media=\"screen\" type=\"text/css\" href=\"\
+        /sf/5aC3PdJA/css/screen.css\" />\n\t<link rel=\"stylesheet\" media=\"print\"\
+        \  type=\"text/css\" href=\"/sf/5aC3PdJA/css/print.css\" />\n\t<script type=\"\
+        text/javascript\" src=\"/hpp/js/default.js;jsessionid=E0B2EAF02EB210E36CC5455474DB26D0.test103e?v=fbd5\"\
+        ></script>\n\t<!--[if lt IE 7]>\n\t\t<link rel=\"stylesheet\" type=\"text/css\"\
+        \ href=\"/sf/5aC3PdJA/css/screen_ie6.css\" />\n\t<![endif]-->\n</head>\n<body>\n\
+        \ <script type=\"text/javascript\">\n\t//<![CDATA[\t\n\tvar clientIPAddress=\"\
+        5.51.179.50\";\n\t\n\tvar config = [];\n\tconfig[\"pmmanimation\"] = 2;\n\t\
+        \n\t//]]>\n  </script>\n\n    \n    \t<div id=\"container\">\r\n      \n \
+        \   <div id=\"content\" >\n\t\t\t\t<div id=\"logoheader\"></div>\r\n<div id=\"\
+        pmcontent\">\t\t\t<div class=\"paddiv1\"></div>\n\t\t\t\n<div id=\"subcontent\"\
+        >\n\t\n\t<h3>Authenticate a transaction</h3>\n\t\n\t<form method=\"post\"\
+        \ action=\"/hpp/3d/authenticate.shtml;jsessionid=E0B2EAF02EB210E36CC5455474DB26D0.test103e\"\
+        \ autocomplete=\"off\">\n\t\t<table class=\"basetable\">\n\t\t\t<tr>\n\t\t\
+        \t\t<td class=\"b\">Amount</td>\n\t\t\t\t<td>USD 2947.50</td>\n\t\t\t</tr>\n\
+        \t\t\t<tr>\n\t\t\t\t<td class=\"b\">To be paid to</td>\n\t\t\t\t<td><a href=\"\
+        http://www.akretion.com\">AkretionCOM340</a></td>\n\t\t\t</tr>\n\t\t\t<tr>\n\
+        \t\t\t\t<td class=\"b\">With card number</td>\n\t\t\t\t<td>5212345678901234</td>\n\
+        \t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td class=\"b\"><label for=\"username\">User\
+        \ Name:</label></td>\n\t\t\t\t<td><input type=\"text\" id=\"username\" name=\"\
+        username\" /></td>\n\t\t\t</tr>\n\t\t\t<script type=\"text/javascript\">\n\
+        \t\t\tvar elToFocus = document.getElementById(\"accountTextInput\");\n\t\t\
+        \tif( null == elToFocus ) {\n\t\t\t\telToFocus = document.getElementById(\"\
+        username\");\n\t\t\t}\n\t\t\telToFocus.focus();\n\t\t\t</script>\n\t\t\t<tr>\n\
+        \t\t\t\t<td class=\"b\"><label for=\"password\">Password:</label></td>\n\t\
+        \t\t\t<td><input type=\"password\" id=\"password\" name=\"password\" /></td>\n\
+        \t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td colspan=\"2\"><br /><input type=\"submit\"\
+        \ class=\"button paySubmit\" value=\"Submit\" /></td>\n\t\t\t</tr>\n\t\t</table>\n\
+        \t\t<input type=\"hidden\" name=\"MD\" value=\"djIhQStGbVBPRU5lMXpqbGZWUW9OSDgwZz09ITkaapbz8RHByFZrd9smRXg2ZVHdtLj+MtuM0diV7y7C19PKfwy9CGFWm9J3WTqNVWOmVN8Qij1aKRPv6n67DsjiaZHrd75YCu+8AwGJhulmycT3WE/nWqnaWTTELJ905RIBtWuKZybdIRjksixQfAp2AIPqiYHcy8WMBnwnWuQ7rmHShf/8qid/rhlvPQRNcsXekP8DfEbEJUFTVSqivb8vvODtUYXfvymvBdhRfTMvWG4N2Id+4wFeqpIJnqaYSG9gTUHayLIIN58g/WDd1MN6WA6YkEinblIJ+O4aRTUgpyP3wJiHnHnhxXjbJjF/DERpj41oq9ERRqKOgNid\"\
+        />\n\t\t<input type=\"hidden\" name=\"PaReq\" value=\"eNpVUl1zgjAQ/CvWH0A+AEHmzAyVztQH0VZ46FOHwZvKtIAGKNJfXw5R2zzd7uY2l00gOmjEYIdpo1HBGqsq+cBJtl9MPdc2bVvOBbdmjuDSnirY+q94UvCNusrKQgmDGxLYFfbtOj0kRa0gSU+Pq1DZQpoWsBFBjnoVqAirepvnfnpqMo0a2IWGIslRxf67v3zw/E+Nde+53KxNiwMbNEjLpqh1p6TdU1cAjf5Sh7o+eoy1bWskY6uRljkwEoHdB9s2VFW92Tnbq00Q/4RR3G2ipzYM3sx15Hfhi09rAYx2wD6pUUku5twU7kRIjwuPO8AGHpKcplDxLpjIueUYNNjIwZGO8i+ARNL+ctBnrrFIO+XSFW8I8HwsC6QuYLca2H305TMlnNZ9arakiO2Z4875NexBIJeMsuKCDzYEgFErG5+Rjc/dV/++wS/j0K18\"\
+        />\n\t\t<input type=\"hidden\" name=\"TermUrl\" value=\"https://test.adyen.com/hpp/3d/validate.shtml\"\
+        />\n\t\t<input type=\"hidden\" name=\"cardNumber\" value=\"5212345678901234\"\
+        />\n\t</form>\n</div>\n  <div class=\"paddiv2\"></div>\n  \t</div>    </div>\n\
+        \    \t</div>  </body>\n</html>"}
+    headers:
+      connection: [Keep-Alive]
+      content-security-policy-report-only: ['default-src ''self'' https://*.adyen.com;
+          script-src ''self'' ''unsafe-inline'' https://*.adyen.com; style-src ''self''
+          ''unsafe-inline'' https://*.adyen.com; img-src *; font-src *; object-src
+          ''none''; frame-src ''self'' https://*.adyen.com; form-action ''self'' https://*.adyen.com;
+          base-uri https://*.adyen.com; report-uri /hpp/csp;']
+      content-type: [text/html;charset=UTF-8]
+      date: ['Mon, 18 Mar 2019 12:01:07 GMT']
+      keep-alive: ['timeout=15, max=100']
+      p3p: ['policyref="/w3c/policy.xml", CP="NOI DSP COR CURa ADMa DEVa OUR NOR BUS
+          FIN STA"']
+      server: [Apache]
+      set-cookie: [JSESSIONID=E0B2EAF02EB210E36CC5455474DB26D0.test103e; Path=/hpp;
+          Secure; HttpOnly]
+      strict-transport-security: [max-age=31536000]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode 'username=user&MD=djIhQStGbVBPRU5lMXpqbGZWUW9OSDgwZz09ITkaapbz8RHByFZrd9smRXg2ZVHdtLj%2BMtuM0diV7y7C19PKfwy9CGFWm9J3WTqNVWOmVN8Qij1aKRPv6n67DsjiaZHrd75YCu%2B8AwGJhulmycT3WE%2FnWqnaWTTELJ905RIBtWuKZybdIRjksixQfAp2AIPqiYHcy8WMBnwnWuQ7rmHShf%2F8qid%2FrhlvPQRNcsXekP8DfEbEJUFTVSqivb8vvODtUYXfvymvBdhRfTMvWG4N2Id%2B4wFeqpIJnqaYSG9gTUHayLIIN58g%2FWDd1MN6WA6YkEinblIJ%2BO4aRTUgpyP3wJiHnHnhxXjbJjF%2FDERpj41oq9ERRqKOgNid&PaReq=eNpVUl1zgjAQ%2FCvWH0A%2BAEHmzAyVztQH0VZ46FOHwZvKtIAGKNJfXw5R2zzd7uY2l00gOmjEYIdpo1HBGqsq%2BcBJtl9MPdc2bVvOBbdmjuDSnirY%2Bq94UvCNusrKQgmDGxLYFfbtOj0kRa0gSU%2BPq1DZQpoWsBFBjnoVqAirepvnfnpqMo0a2IWGIslRxf67v3zw%2FE%2BNde%2B53KxNiwMbNEjLpqh1p6TdU1cAjf5Sh7o%2Beoy1bWskY6uRljkwEoHdB9s2VFW92Tnbq00Q%2F4RR3G2ipzYM3sx15Hfhi09rAYx2wD6pUUku5twU7kRIjwuPO8AGHpKcplDxLpjIueUYNNjIwZGO8i%2BARNL%2BctBnrrFIO%2BXSFW8I8HwsC6QuYLca2H305TMlnNZ9arakiO2Z4875NexBIJeMsuKCDzYEgFErG5%2BRjc%2FdV%2F%2B%2BwS%2Fj0K18&cardNumber=5212345678901234&password=password&TermUrl=https%3A%2F%2Ftest.adyen.com%2Fhpp%2F3d%2Fvalidate.shtml'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['1015']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: https://test.adyen.com/hpp/3d/authenticate.shtml;%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20jsessionid=E0B2EAF02EB210E36CC5455474DB26D0.test103e
+  response:
+    body: {string: !!python/unicode "\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0\
+        \ Strict//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n\
+        <html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\"\n  \t     data-page-model=\"\
+        multi-page\"        \t\t    >\n<head>\n\t<meta http-equiv=\"Content-Type\"\
+        \ content=\"text/html; charset=utf-8\" />\n\n    <meta name=\"viewport\" content=\"\
+        width=device-width, initial-scale=1\" />\n\n\t<title></title>\n\n\t\n\t<link\
+        \ rel=\"stylesheet\" type=\"text/css\" href=\"/hpp/css/reset.css;jsessionid=3EE6CEC1E4FECA0DC83B37E5D3D98434.test104e?v=fbd5\"\
+        \ />\n\t<link rel=\"stylesheet\" media=\"screen\" type=\"text/css\" href=\"\
+        /sf/$skinCode/css/screen.css\" />\n\t<link rel=\"stylesheet\" media=\"print\"\
+        \  type=\"text/css\" href=\"/sf/$skinCode/css/print.css\" />\n\t<script type=\"\
+        text/javascript\" src=\"/hpp/js/default.js;jsessionid=3EE6CEC1E4FECA0DC83B37E5D3D98434.test104e?v=fbd5\"\
+        ></script>\n\t<!--[if lt IE 7]>\n\t\t<link rel=\"stylesheet\" type=\"text/css\"\
+        \ href=\"/sf/$skinCode/css/screen_ie6.css\" />\n\t<![endif]-->\n</head>\n\
+        <body>\n <script type=\"text/javascript\">\n\t//<![CDATA[\t\n\tvar clientIPAddress=\"\
+        5.51.179.50\";\n\t\n\tvar config = [];\n\tconfig[\"pmmanimation\"] = 2;\n\t\
+        \n\t//]]>\n  </script>\n\n    \n        \n    <div id=\"content\" >\n\t\t\t\
+        \t<div class=\"paddiv1\"></div>\n\t\t\t\n<div id=\"subcontent\">\n<script\
+        \ type=\"text/javascript\">\nfunction OnLoadEvent() { \n\tdocument.getElementById(\"\
+        pageform\").submit(); \n}\naddOnLoad(OnLoadEvent);\n</script>\n<h2>You will\
+        \ now be redirected back to AkretionCOM340</h2>\n<form method=\"post\" action=\"\
+        https://test.adyen.com/hpp/3d/validate.shtml\" id=\"pageform\">\n\t\t<input\
+        \ type=\"hidden\" name=\"MD\" value=\"djIhQStGbVBPRU5lMXpqbGZWUW9OSDgwZz09ITkaapbz8RHByFZrd9smRXg2ZVHdtLj+MtuM0diV7y7C19PKfwy9CGFWm9J3WTqNVWOmVN8Qij1aKRPv6n67DsjiaZHrd75YCu+8AwGJhulmycT3WE/nWqnaWTTELJ905RIBtWuKZybdIRjksixQfAp2AIPqiYHcy8WMBnwnWuQ7rmHShf/8qid/rhlvPQRNcsXekP8DfEbEJUFTVSqivb8vvODtUYXfvymvBdhRfTMvWG4N2Id+4wFeqpIJnqaYSG9gTUHayLIIN58g/WDd1MN6WA6YkEinblIJ+O4aRTUgpyP3wJiHnHnhxXjbJjF/DERpj41oq9ERRqKOgNid\"\
+        />\n\t\t<input type=\"hidden\" name=\"PaRes\" value=\"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\"\
+        />\n\t\t<noscript> \n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\t<center> \n\t\t\t\t\
+        <h1>Processing your 3-D Secure Transaction</h1> \n\t\t\t\t<h2>JavaScript is\
+        \ currently disabled or is not supported by your browser.<br/></h2> \n\t\t\
+        \t\t<h3>Please click Submit to continue the processing of your 3-D Secure\
+        \ transaction.</h3> \n\t\t\t\t<input type=\"submit\" class=\"button paySubmit\"\
+        \ value=\"Submit\" />\n\t\t\t</center> \n\t\t</noscript> \n\t</form>\n</div>\n\
+        \  <div class=\"paddiv2\"></div>\n    </div>\n    </body>\n</html>"}
+    headers:
+      connection: [Keep-Alive]
+      content-security-policy-report-only: ['default-src ''self'' https://*.adyen.com;
+          script-src ''self'' ''unsafe-inline'' https://*.adyen.com; style-src ''self''
+          ''unsafe-inline'' https://*.adyen.com; img-src *; font-src *; object-src
+          ''none''; frame-src ''self'' https://*.adyen.com; form-action ''self'' https://*.adyen.com;
+          base-uri https://*.adyen.com; report-uri /hpp/csp;']
+      content-type: [text/html;charset=UTF-8]
+      date: ['Mon, 18 Mar 2019 12:01:07 GMT']
+      keep-alive: ['timeout=15, max=100']
+      p3p: ['policyref="/w3c/policy.xml", CP="NOI DSP COR CURa ADMa DEVa OUR NOR BUS
+          FIN STA"']
+      server: [Apache]
+      set-cookie: [JSESSIONID=3EE6CEC1E4FECA0DC83B37E5D3D98434.test104e; Path=/hpp;
+          Secure; HttpOnly]
+      strict-transport-security: [max-age=31536000]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"md": "djIhQStGbVBPRU5lMXpqbGZWUW9OSDgwZz09ITkaapbz8RHByFZrd9smRXg2ZVHdtLj+MtuM0diV7y7C19PKfwy9CGFWm9J3WTqNVWOmVN8Qij1aKRPv6n67DsjiaZHrd75YCu+8AwGJhulmycT3WE/nWqnaWTTELJ905RIBtWuKZybdIRjksixQfAp2AIPqiYHcy8WMBnwnWuQ7rmHShf/8qid/rhlvPQRNcsXekP8DfEbEJUFTVSqivb8vvODtUYXfvymvBdhRfTMvWG4N2Id+4wFeqpIJnqaYSG9gTUHayLIIN58g/WDd1MN6WA6YkEinblIJ+O4aRTUgpyP3wJiHnHnhxXjbJjF/DERpj41oq9ERRqKOgNid",
+      "applicationInfo": {"adyenLibrary": {"version": "2.0.0", "name": "adyen-python-api-library"}},
+      "shopperIp": "42.42.42.42", "paResponse": "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",
+      "browserInfo": null, "merchantAccount": "AkretionCOM340"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['3817']
+      Content-Type: [application/json]
+      User-Agent: [!!python/unicode 'shopinvader adyen-python-api-library/2.0.0']
+    method: POST
+    uri: https://pal-test.adyen.com/pal/servlet/Payment/v40/authorise3d
+  response:
+    body: {string: !!python/unicode '{"pspReference":"8535529104671025","resultCode":"Authorised","authCode":"81335"}'}
+    headers:
+      connection: [Keep-Alive]
+      content-type: [application/json;charset=utf-8]
+      date: ['Mon, 18 Mar 2019 12:01:07 GMT']
+      keep-alive: ['timeout=15, max=100']
+      pspreference: ['8535529104671066']
+      server: [Apache]
+      set-cookie: [JSESSIONID=3155EA72AEF01585EC0D003D97BD0C5F.test3e; Path=/pal;
+          Secure; HttpOnly]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"merchantAccount": "AkretionCOM340", "modificationAmount":
+      {"currency": "USD", "value": 294750}, "originalReference": "8535529104671025",
+      "applicationInfo": {"adyenLibrary": {"version": "2.0.0", "name": "adyen-python-api-library"}}}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['233']
+      Content-Type: [application/json]
+      User-Agent: [!!python/unicode 'shopinvader adyen-python-api-library/2.0.0']
+    method: POST
+    uri: https://pal-test.adyen.com/pal/servlet/Payment/v40/capture
+  response:
+    body: {string: !!python/unicode '{"pspReference":"8835529104682375","response":"[capture-received]"}'}
+    headers:
+      connection: [Keep-Alive]
+      content-type: [application/json;charset=utf-8]
+      date: ['Mon, 18 Mar 2019 12:01:08 GMT']
+      keep-alive: ['timeout=15, max=100']
+      pspreference: ['8835529104682375']
+      server: [Apache]
+      set-cookie: [JSESSIONID=2BC1D8E3CFAC27EC5A1AF32A81FAEC12.test103e; Path=/pal;
+          Secure; HttpOnly]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"additionalData": {"executeThreeD": true, "card.encrypted.json":
+      "adyenan0_1_1$KubTXCvc942tq1Im3qZC2tWCRs7jocWsXRTB+T7snhOWkqrJ4G9IdMJKWGUBpmOR4kUoNNEsOQIj8ZWpib4BZ0E+tqq/F4JUIuuMZrvfWtRDR8yxW7rXu2brKuEuGYu+Vs/E3Pr7enuZJyrHrv4GR693BBtEz/YAzhyUdE+vkv5GHjJq0SxE0bJn/cfYLJzj8COuzv2gD8RTccK0UhNXITdXn9Kp+AhsTZcO2LthBMTR6g2tttmMoURaDgWIJPx+5n0uV0/6bStlupQmV4LjNTz+AOXqoWcduUl80AbhHqEia4KbcevPQdPCt6BaDJ524RH+o8rA+ORhxpuMKEiCMQ==$aLFK440TRa4oUZdPaNguZeH9+yDxL6gfubhP0y7JW4g9TVgZ4uCPvz0d0ozC3Mcyb3wqwxfra5Nqp30QYdcYcur9B1EoxuLJAlcWOG3zrt5YVR7kTDF5kAYE+mzPEbbS3LhG+b08pM9dKacb5u7fCYYXQs2NZP31TBc+9qmxNmopcMtQd5iFcGRwjD4vinw0JSVOA9c9U5Az3+yA/fn8TMw7ybZbbpHJo/+4Fyyl6A=="},
+      "amount": {"currency": "USD", "value": 294750}, "shopperEmail": "deltapc@yourcompany.example.com",
+      "reference": "SO002|deltapc@yourcompany.example.com|42", "browserInfo": {"userAgent":
+      "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9) Gecko/2008052912 Firefox/3.0",
+      "acceptHeader": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+      "shopperReference": 10, "deliveryAddress": {"city": "Fremont", "houseNumberOrName":
+      "", "country": "US", "street": "3661 Station Street", "postalCode": "94538",
+      "stateOrProvince": "California"}, "shopperIP": "42.42.42.42", "merchantAccount":
+      "AkretionCOM340", "applicationInfo": {"adyenLibrary": {"version": "2.0.0", "name":
+      "adyen-python-api-library"}}}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['1368']
+      Content-Type: [application/json]
+      User-Agent: [!!python/unicode 'shopinvader adyen-python-api-library/2.0.0']
+    method: POST
+    uri: https://pal-test.adyen.com/pal/servlet/Payment/v40/authorise
+  response:
+    body: {string: !!python/unicode '{"pspReference":"8535529105165746","resultCode":"RedirectShopper","issuerUrl":"https:\/\/test.adyen.com\/hpp\/3d\/validate.shtml","md":"djIhYU9lVzhmVkJRazZBSXV1cnFCRUNidz09IQkVHiiP38T77Jbxq\/6t+Ui2ouSyK\/Z0ahzUHZ8jbXuVsBGW2THF\/VSBWGnBOO4a4gr+U+OKlkpOqqTOkM5F3\/5tzFtOIoz0dqVWQBcTOe4rm4Z9G\/C6yVgzC01VD0hd2eAadAHDrutaagMVLDcmgI6NTNzjc0hTTO7TjsogM9vRHx\/8moVbUWmXL3j3EwXruucgy3V7S0sIesR7zBtU92ZLArDsPiOEFTFkfhWmFX3nDyK+k9Dph3D54a3E7kDGcLuPAka8RytbQEIJpTB6bCpFV5K7f9mZan2I1mfe0x5aBsrzZYkqa4Y+xgqQVVicjEwK+HmEig\/awqb75Woo","paRequest":"eNpVUl1zgjAQ\/CvWH0A+IArMmRmqztQH0anw3GHijTItoAGq9teXU9Q2T7e7uc1lE0j2FnG2QdNa1LDEus52OMi3k2HoK1cpGQiuxEiNvdFQwzp6x6OGb7R1XpVaONyRwO6wa7dmn5WNhswcXxexVkK6HrAeQYF2MdMJ1s26KCJzbHOLFtiNhjIrUKfRRzR9CaNPi03nOV0tXY8Du2pgqrZs7EVL1VF3AK390vumOYSMnU4nJ+tbHVMVwEgE9hxs3VJVd2bnfKtXs\/QnTtLLKpmf4mQu48TweBfRmgCjHbDNGtSSi4C7wh8IGXIRqhGwKw9ZQVPodDMbyMAbOzRYz8GBjopugETS\/nLQZW6xNBft0xUfCPB8qEqkLmCPGthz9OkbJWyaLjUlKWI1GvsBv4d9Fcglp6y44FcbAsColfXPyPrn7qp\/3+AX4z6tdA=="}'}
+    headers:
+      connection: [Keep-Alive]
+      content-type: [application/json;charset=utf-8]
+      date: ['Mon, 18 Mar 2019 12:01:56 GMT']
+      keep-alive: ['timeout=15, max=100']
+      pspreference: ['8535529105165746']
+      server: [Apache]
+      set-cookie: [JSESSIONID=34A85455351B8E7BFE8B8544DAFC7884.test4e; Path=/pal;
+          Secure; HttpOnly]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode 'MD=djIhYU9lVzhmVkJRazZBSXV1cnFCRUNidz09IQkVHiiP38T77Jbxq%2F6t%2BUi2ouSyK%2FZ0ahzUHZ8jbXuVsBGW2THF%2FVSBWGnBOO4a4gr%2BU%2BOKlkpOqqTOkM5F3%2F5tzFtOIoz0dqVWQBcTOe4rm4Z9G%2FC6yVgzC01VD0hd2eAadAHDrutaagMVLDcmgI6NTNzjc0hTTO7TjsogM9vRHx%2F8moVbUWmXL3j3EwXruucgy3V7S0sIesR7zBtU92ZLArDsPiOEFTFkfhWmFX3nDyK%2Bk9Dph3D54a3E7kDGcLuPAka8RytbQEIJpTB6bCpFV5K7f9mZan2I1mfe0x5aBsrzZYkqa4Y%2BxgqQVVicjEwK%2BHmEig%2Fawqb75Woo&TermUrl=https%3A%2F%2Ftest.adyen.com%2Fhpp%2F3d%2Fvalidate.shtml&PaReq=eNpVUl1zgjAQ%2FCvWH0A%2BIArMmRmqztQH0anw3GHijTItoAGq9teXU9Q2T7e7uc1lE0j2FnG2QdNa1LDEus52OMi3k2HoK1cpGQiuxEiNvdFQwzp6x6OGb7R1XpVaONyRwO6wa7dmn5WNhswcXxexVkK6HrAeQYF2MdMJ1s26KCJzbHOLFtiNhjIrUKfRRzR9CaNPi03nOV0tXY8Du2pgqrZs7EVL1VF3AK390vumOYSMnU4nJ%2BtbHVMVwEgE9hxs3VJVd2bnfKtXs%2FQnTtLLKpmf4mQu48TweBfRmgCjHbDNGtSSi4C7wh8IGXIRqhGwKw9ZQVPodDMbyMAbOzRYz8GBjopugETS%2FnLQZW6xNBft0xUfCPB8qEqkLmCPGthz9OkbJWyaLjUlKWI1GvsBv4d9Fcglp6y44FcbAsColfXPyPrn7qp%2F3%2BAX4z6tdA%3D%3D'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['943']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: https://test.adyen.com/hpp/3d/validate.shtml
+  response:
+    body: {string: !!python/unicode "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0\
+        \ Strict//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n\
+        <html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\"\n  \t     data-page-model=\"\
+        multi-page\"        \t\t    >\n<head>\n\t<meta http-equiv=\"Content-Type\"\
+        \ content=\"text/html; charset=utf-8\" />\n\n    <meta name=\"viewport\" content=\"\
+        width=device-width, initial-scale=1\" />\n\n\t<title>3D Authentication Host</title>\n\
+        \n\t<link rel=\"shortcut icon\" href=\"/sf/5aC3PdJA/img/favicon.ico\" />\n\
+        \t\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"/hpp/css/reset.css;jsessionid=9BC81CF9FBE0616B94E76128E05030A7.test4e?v=fbd5\"\
+        \ />\n\t<link rel=\"stylesheet\" media=\"screen\" type=\"text/css\" href=\"\
+        /sf/5aC3PdJA/css/screen.css\" />\n\t<link rel=\"stylesheet\" media=\"print\"\
+        \  type=\"text/css\" href=\"/sf/5aC3PdJA/css/print.css\" />\n\t<script type=\"\
+        text/javascript\" src=\"/hpp/js/default.js;jsessionid=9BC81CF9FBE0616B94E76128E05030A7.test4e?v=fbd5\"\
+        ></script>\n\t<!--[if lt IE 7]>\n\t\t<link rel=\"stylesheet\" type=\"text/css\"\
+        \ href=\"/sf/5aC3PdJA/css/screen_ie6.css\" />\n\t<![endif]-->\n</head>\n<body>\n\
+        \ <script type=\"text/javascript\">\n\t//<![CDATA[\t\n\tvar clientIPAddress=\"\
+        5.51.179.50\";\n\t\n\tvar config = [];\n\tconfig[\"pmmanimation\"] = 2;\n\t\
+        \n\t//]]>\n  </script>\n\n    \n    \t<div id=\"container\">\r\n      \n \
+        \   <div id=\"content\" >\n\t\t\t\t<div id=\"logoheader\"></div>\r\n<div id=\"\
+        pmcontent\">\t\t\t<div class=\"paddiv1\"></div>\n\t\t\t\n<div id=\"subcontent\"\
+        >\n\t\n\t<h3>Authenticate a transaction</h3>\n\t\n\t<form method=\"post\"\
+        \ action=\"/hpp/3d/authenticate.shtml;jsessionid=9BC81CF9FBE0616B94E76128E05030A7.test4e\"\
+        \ autocomplete=\"off\">\n\t\t<table class=\"basetable\">\n\t\t\t<tr>\n\t\t\
+        \t\t<td class=\"b\">Amount</td>\n\t\t\t\t<td>USD 2947.50</td>\n\t\t\t</tr>\n\
+        \t\t\t<tr>\n\t\t\t\t<td class=\"b\">To be paid to</td>\n\t\t\t\t<td><a href=\"\
+        http://www.akretion.com\">AkretionCOM340</a></td>\n\t\t\t</tr>\n\t\t\t<tr>\n\
+        \t\t\t\t<td class=\"b\">With card number</td>\n\t\t\t\t<td>5212345678901234</td>\n\
+        \t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td class=\"b\"><label for=\"username\">User\
+        \ Name:</label></td>\n\t\t\t\t<td><input type=\"text\" id=\"username\" name=\"\
+        username\" /></td>\n\t\t\t</tr>\n\t\t\t<script type=\"text/javascript\">\n\
+        \t\t\tvar elToFocus = document.getElementById(\"accountTextInput\");\n\t\t\
+        \tif( null == elToFocus ) {\n\t\t\t\telToFocus = document.getElementById(\"\
+        username\");\n\t\t\t}\n\t\t\telToFocus.focus();\n\t\t\t</script>\n\t\t\t<tr>\n\
+        \t\t\t\t<td class=\"b\"><label for=\"password\">Password:</label></td>\n\t\
+        \t\t\t<td><input type=\"password\" id=\"password\" name=\"password\" /></td>\n\
+        \t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td colspan=\"2\"><br /><input type=\"submit\"\
+        \ class=\"button paySubmit\" value=\"Submit\" /></td>\n\t\t\t</tr>\n\t\t</table>\n\
+        \t\t<input type=\"hidden\" name=\"MD\" value=\"djIhYU9lVzhmVkJRazZBSXV1cnFCRUNidz09IQkVHiiP38T77Jbxq/6t+Ui2ouSyK/Z0ahzUHZ8jbXuVsBGW2THF/VSBWGnBOO4a4gr+U+OKlkpOqqTOkM5F3/5tzFtOIoz0dqVWQBcTOe4rm4Z9G/C6yVgzC01VD0hd2eAadAHDrutaagMVLDcmgI6NTNzjc0hTTO7TjsogM9vRHx/8moVbUWmXL3j3EwXruucgy3V7S0sIesR7zBtU92ZLArDsPiOEFTFkfhWmFX3nDyK+k9Dph3D54a3E7kDGcLuPAka8RytbQEIJpTB6bCpFV5K7f9mZan2I1mfe0x5aBsrzZYkqa4Y+xgqQVVicjEwK+HmEig/awqb75Woo\"\
+        />\n\t\t<input type=\"hidden\" name=\"PaReq\" value=\"eNpVUl1zgjAQ/CvWH0A+IArMmRmqztQH0anw3GHijTItoAGq9teXU9Q2T7e7uc1lE0j2FnG2QdNa1LDEus52OMi3k2HoK1cpGQiuxEiNvdFQwzp6x6OGb7R1XpVaONyRwO6wa7dmn5WNhswcXxexVkK6HrAeQYF2MdMJ1s26KCJzbHOLFtiNhjIrUKfRRzR9CaNPi03nOV0tXY8Du2pgqrZs7EVL1VF3AK390vumOYSMnU4nJ+tbHVMVwEgE9hxs3VJVd2bnfKtXs/QnTtLLKpmf4mQu48TweBfRmgCjHbDNGtSSi4C7wh8IGXIRqhGwKw9ZQVPodDMbyMAbOzRYz8GBjopugETS/nLQZW6xNBft0xUfCPB8qEqkLmCPGthz9OkbJWyaLjUlKWI1GvsBv4d9Fcglp6y44FcbAsColfXPyPrn7qp/3+AX4z6tdA==\"\
+        />\n\t\t<input type=\"hidden\" name=\"TermUrl\" value=\"https://test.adyen.com/hpp/3d/validate.shtml\"\
+        />\n\t\t<input type=\"hidden\" name=\"cardNumber\" value=\"5212345678901234\"\
+        />\n\t</form>\n</div>\n  <div class=\"paddiv2\"></div>\n  \t</div>    </div>\n\
+        \    \t</div>  </body>\n</html>"}
+    headers:
+      connection: [Keep-Alive]
+      content-security-policy-report-only: ['default-src ''self'' https://*.adyen.com;
+          script-src ''self'' ''unsafe-inline'' https://*.adyen.com; style-src ''self''
+          ''unsafe-inline'' https://*.adyen.com; img-src *; font-src *; object-src
+          ''none''; frame-src ''self'' https://*.adyen.com; form-action ''self'' https://*.adyen.com;
+          base-uri https://*.adyen.com; report-uri /hpp/csp;']
+      content-type: [text/html;charset=UTF-8]
+      date: ['Mon, 18 Mar 2019 12:01:57 GMT']
+      keep-alive: ['timeout=15, max=100']
+      p3p: ['policyref="/w3c/policy.xml", CP="NOI DSP COR CURa ADMa DEVa OUR NOR BUS
+          FIN STA"']
+      server: [Apache]
+      set-cookie: [JSESSIONID=9BC81CF9FBE0616B94E76128E05030A7.test4e; Path=/hpp;
+          Secure; HttpOnly]
+      strict-transport-security: [max-age=31536000]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode 'username=user&MD=djIhYU9lVzhmVkJRazZBSXV1cnFCRUNidz09IQkVHiiP38T77Jbxq%2F6t%2BUi2ouSyK%2FZ0ahzUHZ8jbXuVsBGW2THF%2FVSBWGnBOO4a4gr%2BU%2BOKlkpOqqTOkM5F3%2F5tzFtOIoz0dqVWQBcTOe4rm4Z9G%2FC6yVgzC01VD0hd2eAadAHDrutaagMVLDcmgI6NTNzjc0hTTO7TjsogM9vRHx%2F8moVbUWmXL3j3EwXruucgy3V7S0sIesR7zBtU92ZLArDsPiOEFTFkfhWmFX3nDyK%2Bk9Dph3D54a3E7kDGcLuPAka8RytbQEIJpTB6bCpFV5K7f9mZan2I1mfe0x5aBsrzZYkqa4Y%2BxgqQVVicjEwK%2BHmEig%2Fawqb75Woo&PaReq=eNpVUl1zgjAQ%2FCvWH0A%2BIArMmRmqztQH0anw3GHijTItoAGq9teXU9Q2T7e7uc1lE0j2FnG2QdNa1LDEus52OMi3k2HoK1cpGQiuxEiNvdFQwzp6x6OGb7R1XpVaONyRwO6wa7dmn5WNhswcXxexVkK6HrAeQYF2MdMJ1s26KCJzbHOLFtiNhjIrUKfRRzR9CaNPi03nOV0tXY8Du2pgqrZs7EVL1VF3AK390vumOYSMnU4nJ%2BtbHVMVwEgE9hxs3VJVd2bnfKtXs%2FQnTtLLKpmf4mQu48TweBfRmgCjHbDNGtSSi4C7wh8IGXIRqhGwKw9ZQVPodDMbyMAbOzRYz8GBjopugETS%2FnLQZW6xNBft0xUfCPB8qEqkLmCPGthz9OkbJWyaLjUlKWI1GvsBv4d9Fcglp6y44FcbAsColfXPyPrn7qp%2F3%2BAX4z6tdA%3D%3D&cardNumber=5212345678901234&password=password&TermUrl=https%3A%2F%2Ftest.adyen.com%2Fhpp%2F3d%2Fvalidate.shtml'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['1003']
+      Content-Type: [application/x-www-form-urlencoded]
+      User-Agent: [python-requests/2.21.0]
+    method: POST
+    uri: https://test.adyen.com/hpp/3d/authenticate.shtml;%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20jsessionid=9BC81CF9FBE0616B94E76128E05030A7.test4e
+  response:
+    body: {string: !!python/unicode "\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0\
+        \ Strict//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n\
+        <html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\"\n  \t     data-page-model=\"\
+        multi-page\"        \t\t    >\n<head>\n\t<meta http-equiv=\"Content-Type\"\
+        \ content=\"text/html; charset=utf-8\" />\n\n    <meta name=\"viewport\" content=\"\
+        width=device-width, initial-scale=1\" />\n\n\t<title></title>\n\n\t\n\t<link\
+        \ rel=\"stylesheet\" type=\"text/css\" href=\"/hpp/css/reset.css;jsessionid=0C93254DE55649C3C31941D1197FA19E.test103e?v=fbd5\"\
+        \ />\n\t<link rel=\"stylesheet\" media=\"screen\" type=\"text/css\" href=\"\
+        /sf/$skinCode/css/screen.css\" />\n\t<link rel=\"stylesheet\" media=\"print\"\
+        \  type=\"text/css\" href=\"/sf/$skinCode/css/print.css\" />\n\t<script type=\"\
+        text/javascript\" src=\"/hpp/js/default.js;jsessionid=0C93254DE55649C3C31941D1197FA19E.test103e?v=fbd5\"\
+        ></script>\n\t<!--[if lt IE 7]>\n\t\t<link rel=\"stylesheet\" type=\"text/css\"\
+        \ href=\"/sf/$skinCode/css/screen_ie6.css\" />\n\t<![endif]-->\n</head>\n\
+        <body>\n <script type=\"text/javascript\">\n\t//<![CDATA[\t\n\tvar clientIPAddress=\"\
+        5.51.179.50\";\n\t\n\tvar config = [];\n\tconfig[\"pmmanimation\"] = 2;\n\t\
+        \n\t//]]>\n  </script>\n\n    \n        \n    <div id=\"content\" >\n\t\t\t\
+        \t<div class=\"paddiv1\"></div>\n\t\t\t\n<div id=\"subcontent\">\n<script\
+        \ type=\"text/javascript\">\nfunction OnLoadEvent() { \n\tdocument.getElementById(\"\
+        pageform\").submit(); \n}\naddOnLoad(OnLoadEvent);\n</script>\n<h2>You will\
+        \ now be redirected back to AkretionCOM340</h2>\n<form method=\"post\" action=\"\
+        https://test.adyen.com/hpp/3d/validate.shtml\" id=\"pageform\">\n\t\t<input\
+        \ type=\"hidden\" name=\"MD\" value=\"djIhYU9lVzhmVkJRazZBSXV1cnFCRUNidz09IQkVHiiP38T77Jbxq/6t+Ui2ouSyK/Z0ahzUHZ8jbXuVsBGW2THF/VSBWGnBOO4a4gr+U+OKlkpOqqTOkM5F3/5tzFtOIoz0dqVWQBcTOe4rm4Z9G/C6yVgzC01VD0hd2eAadAHDrutaagMVLDcmgI6NTNzjc0hTTO7TjsogM9vRHx/8moVbUWmXL3j3EwXruucgy3V7S0sIesR7zBtU92ZLArDsPiOEFTFkfhWmFX3nDyK+k9Dph3D54a3E7kDGcLuPAka8RytbQEIJpTB6bCpFV5K7f9mZan2I1mfe0x5aBsrzZYkqa4Y+xgqQVVicjEwK+HmEig/awqb75Woo\"\
+        />\n\t\t<input type=\"hidden\" name=\"PaRes\" value=\"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\"\
+        />\n\t\t<noscript> \n\t\t\t<br/> \n\t\t\t<br/> \n\t\t\t<center> \n\t\t\t\t\
+        <h1>Processing your 3-D Secure Transaction</h1> \n\t\t\t\t<h2>JavaScript is\
+        \ currently disabled or is not supported by your browser.<br/></h2> \n\t\t\
+        \t\t<h3>Please click Submit to continue the processing of your 3-D Secure\
+        \ transaction.</h3> \n\t\t\t\t<input type=\"submit\" class=\"button paySubmit\"\
+        \ value=\"Submit\" />\n\t\t\t</center> \n\t\t</noscript> \n\t</form>\n</div>\n\
+        \  <div class=\"paddiv2\"></div>\n    </div>\n    </body>\n</html>"}
+    headers:
+      connection: [Keep-Alive]
+      content-security-policy-report-only: ['default-src ''self'' https://*.adyen.com;
+          script-src ''self'' ''unsafe-inline'' https://*.adyen.com; style-src ''self''
+          ''unsafe-inline'' https://*.adyen.com; img-src *; font-src *; object-src
+          ''none''; frame-src ''self'' https://*.adyen.com; form-action ''self'' https://*.adyen.com;
+          base-uri https://*.adyen.com; report-uri /hpp/csp;']
+      content-type: [text/html;charset=UTF-8]
+      date: ['Mon, 18 Mar 2019 12:01:57 GMT']
+      keep-alive: ['timeout=15, max=100']
+      p3p: ['policyref="/w3c/policy.xml", CP="NOI DSP COR CURa ADMa DEVa OUR NOR BUS
+          FIN STA"']
+      server: [Apache]
+      set-cookie: [JSESSIONID=0C93254DE55649C3C31941D1197FA19E.test103e; Path=/hpp;
+          Secure; HttpOnly]
+      strict-transport-security: [max-age=31536000]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"md": "djIhYU9lVzhmVkJRazZBSXV1cnFCRUNidz09IQkVHiiP38T77Jbxq/6t+Ui2ouSyK/Z0ahzUHZ8jbXuVsBGW2THF/VSBWGnBOO4a4gr+U+OKlkpOqqTOkM5F3/5tzFtOIoz0dqVWQBcTOe4rm4Z9G/C6yVgzC01VD0hd2eAadAHDrutaagMVLDcmgI6NTNzjc0hTTO7TjsogM9vRHx/8moVbUWmXL3j3EwXruucgy3V7S0sIesR7zBtU92ZLArDsPiOEFTFkfhWmFX3nDyK+k9Dph3D54a3E7kDGcLuPAka8RytbQEIJpTB6bCpFV5K7f9mZan2I1mfe0x5aBsrzZYkqa4Y+xgqQVVicjEwK+HmEig/awqb75Woo",
+      "applicationInfo": {"adyenLibrary": {"version": "2.0.0", "name": "adyen-python-api-library"}},
+      "shopperIp": "42.42.42.42", "paResponse": "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",
+      "browserInfo": null, "merchantAccount": "AkretionCOM340"}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['3821']
+      Content-Type: [application/json]
+      User-Agent: [!!python/unicode 'shopinvader adyen-python-api-library/2.0.0']
+    method: POST
+    uri: https://pal-test.adyen.com/pal/servlet/Payment/v40/authorise3d
+  response:
+    body: {string: !!python/unicode '{"pspReference":"8535529105165746","resultCode":"Authorised","authCode":"47150"}'}
+    headers:
+      connection: [Keep-Alive]
+      content-type: [application/json;charset=utf-8]
+      date: ['Mon, 18 Mar 2019 12:01:57 GMT']
+      keep-alive: ['timeout=15, max=100']
+      pspreference: ['8835529105172061']
+      server: [Apache]
+      set-cookie: [JSESSIONID=2A7FBAE2D7CCCF574FB41670905C3EB1.test103e; Path=/pal;
+          Secure; HttpOnly]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode '{"merchantAccount": "AkretionCOM340", "modificationAmount":
+      {"currency": "USD", "value": 294750}, "originalReference": "8535529105165746",
+      "applicationInfo": {"adyenLibrary": {"version": "2.0.0", "name": "adyen-python-api-library"}}}'
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['233']
+      Content-Type: [application/json]
+      User-Agent: [!!python/unicode 'shopinvader adyen-python-api-library/2.0.0']
+    method: POST
+    uri: https://pal-test.adyen.com/pal/servlet/Payment/v40/capture
+  response:
+    body: {string: !!python/unicode '{"pspReference":"8535529105170811","response":"[capture-received]"}'}
+    headers:
+      connection: [Keep-Alive]
+      content-type: [application/json;charset=utf-8]
+      date: ['Mon, 18 Mar 2019 12:01:57 GMT']
+      keep-alive: ['timeout=15, max=100']
+      pspreference: ['8535529105170811']
+      server: [Apache]
+      set-cookie: [JSESSIONID=4B94E55007D9F51927F126CE2FEE36BB.test3e; Path=/pal;
+          Secure; HttpOnly]
+      transfer-encoding: [chunked]
+    status: {code: 200, message: OK}
+version: 1
