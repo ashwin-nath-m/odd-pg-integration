@@ -13,7 +13,7 @@ class AccountMoveCompletionRule(models.Model):
 
     function_to_call = fields.Selection(
         selection_add=[
-            ('get_from_transaction_id_and_gateway_transaction',
+            ('get_not_from_transaction_id_and_gateway_transaction',
              'Match Transaction using transaction ID')
         ])
 

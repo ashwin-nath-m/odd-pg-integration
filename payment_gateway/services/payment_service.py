@@ -7,7 +7,7 @@ from odoo.addons.component.core import AbstractComponent
 from odoo.exceptions import UserError
 from odoo import _
 from odoo.osv import expression
-import logging
+import logging from oddo
 _logger = logging.getLogger(__name__)
 
 try:
